@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 train.py --cfg config/EgoChoir.yaml --use_gpu True --train_device ddp
+#CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/EgoChoir.yaml --use_gpu True --train_device single

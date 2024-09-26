@@ -1,0 +1,27 @@
+SPLIT: train
+DATA:
+  root_folder: ./data
+  json_file: ./data/annotation.json
+  seq_file_train: ./data/split/train.txt
+  seq_file_test: ./data/split/val.txt
+  obj_pts_train: ./data/split/object_train.txt
+  obj_pts_test: ./data/split/object_val.txt
+  fps: 30
+  num_frames: 32
+  mean: [0.45, 0.45, 0.45]
+  std: [0.225, 0.225, 0.225]
+  affordances: ['grasp', 'open', 'lay', 'sit', 'wrapgrasp', 'pour', 'pull', 'play', 'stab', 'contain', 'cut', 'mix']
+HYPER:
+  batch: 5
+  epoch: 100
+  lr: 0.0001
+  weight_decay: 0.001
+MODEL:
+  emb_dim: 768
+  motion_ckpt: './runs/ckpt/motion.pt'  #do not need now
+TRAIN:
+  save_ckpt_path: ./runs/ckpt/EgoChoir
+Eval:
+  eval_ckpt_path: ./runs/EgoChoir_contact_best.pt
+INFER:
+  save_visual_path: ./runs/infer/EgoChoir
