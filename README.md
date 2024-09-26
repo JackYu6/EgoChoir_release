@@ -32,7 +32,7 @@ EgoChoir seek to estimate 3D human contact and obejct affordance from egocentric
 (1) Download the [`smpl_neutral_geodesic_dist.npy`](https://rich.is.tue.mpg.de/download.php) and put it under the folder `data/`, this is used to compute the metrics geo. We also make the `smplx_neutral_geodesic_dist.npy`, download [here](https://pan.baidu.com/s/1R-nM72cuKPg8g_zhxdRkwQ?pwd=233w). 
 <br>
 (2) Download the pre-trained [HRNet](https://datarelease.blob.core.windows.net/metro/models/hrnetv2_w40_imagenet_pretrained.pth), put `.pth` file under the folder `tools/models/hrnet/config/hrnet/`. <br>
-(3) Download the pre-trained EgoChoir from [Baidu Pan](https://pan.baidu.com/s/1Y09cWXF2EwT9h-HrcSPiIQ?pwd=grru), key: grru, or [Google Drive](https://drive.google.com/drive/folders/1DzEhqTeZnrquXTRvJvVHNBFLCtT_ieDA?usp=sharing). Put the checkpoint file under the folder `runs/`. <br>files under the `runs/`. Note: We have integrated the weights of the motion encoder into the checkpoint, you don't need to pre-train it.
+(3) Download the pre-trained EgoChoir from [Baidu Pan](https://pan.baidu.com/s/1Y09cWXF2EwT9h-HrcSPiIQ?pwd=grru), key: grru, or [Google Drive](https://drive.google.com/drive/folders/1DzEhqTeZnrquXTRvJvVHNBFLCtT_ieDA?usp=sharing). Put the checkpoint file under the folder `runs/`. Note: We have integrated the weights of the motion encoder into the checkpoint, you don't need to pre-train it.
 
 ## 📖Dataset <a name="3"></a>
 
